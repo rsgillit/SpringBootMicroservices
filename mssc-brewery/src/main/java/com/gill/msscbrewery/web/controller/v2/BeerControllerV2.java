@@ -2,6 +2,7 @@ package com.gill.msscbrewery.web.controller.v2;
 
 import com.gill.msscbrewery.services.v2.BeerServiceV2;
 import com.gill.msscbrewery.web.model.v2.BeerDtoV2;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +13,7 @@ import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
+@Slf4j
 @Validated
 @RequestMapping("/api/v2/beer")
 @RestController
